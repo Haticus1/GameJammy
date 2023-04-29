@@ -9,13 +9,20 @@ public class shooting : MonoBehaviour
     public GameObject bubblePrefab;
 
     public float bubbleForce = 20f;
+    public float timer = 0.1f;
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if (Input.GetKey(KeyCode.Space))
         {
-            Shoot();
+            timer += Time.deltaTime;
+            if (timer >= 0.1f)
+            {
+                Shoot();
+                timer = 0f;
+            }
+         
         }
     }
 
