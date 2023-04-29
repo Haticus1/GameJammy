@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class shooting : MonoBehaviour
 {
@@ -12,26 +13,25 @@ public class shooting : MonoBehaviour
     public float timer = 0.1f;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetKey(KeyCode.Space))
         {
             timer += Time.deltaTime;
             if (timer >= 0.1f)
             {
-                Shoot();
-                timer = 0f;
+                SpawnProjectile();
             }
-         
+
         }
     }
 
-    void Shoot()
+
+    void SpawnProjectile()
     {
         GameObject bubble = Instantiate(bubblePrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bubble.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bubbleForce, ForceMode2D.Impulse);
+        timer = 0f;
     }
-
-
 }
