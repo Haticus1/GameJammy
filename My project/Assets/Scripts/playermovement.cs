@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class playermovement : MonoBehaviour
 {
@@ -11,16 +12,14 @@ public class playermovement : MonoBehaviour
 
     Vector2 movement;
 
-    // Update is called once per frame
-    void Update()
-    {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-    }
-
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.velocity = movement * moveSpeed * Time.fixedDeltaTime;
+    }
+
+    public void OnMove(InputValue value)
+    {
+        movement = value.Get<Vector2>();
     }
 
 }
