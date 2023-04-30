@@ -28,9 +28,9 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "WASD",
-                    "id": "4f869b4e-08f2-4bf1-9dad-594cdb80a51e",
-                    "path": "2DVector(mode=1)",
+                    "name": "2D Vector",
+                    "id": "2978f566-5c4e-409b-b33c-6bfc78c094cb",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -40,7 +40,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "c7e6037b-4817-4d21-a789-8a9fb0d66b22",
+                    "id": "e4ecfcdc-f7ff-4c10-a63b-67187db5a8aa",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -51,7 +51,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "c3b91c75-6bfe-4e8a-b9a2-1abf576618d7",
+                    "id": "00c6b138-cefa-42ca-bc2a-73850bb893db",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -62,7 +62,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "c7c6a356-5b4f-4765-aaa5-61d6449a48af",
+                    "id": "d0f0f354-0953-4b55-bed8-17f89f9eea64",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -73,8 +73,63 @@
                 },
                 {
                     "name": "right",
-                    "id": "71643fcd-662c-42a1-885a-16bdf5ec7d60",
+                    "id": "7f0aaf88-0e5b-4ff8-8d02-e5a75abe2e27",
                     "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "8d00a34d-06a2-46c8-8209-2809da92c92f",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "6ee9ae1e-e5b9-4c68-a479-e5ee488f68f1",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "47284510-d3dd-4ce6-9105-d249dc8c3d25",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "ba730c8f-1c01-42b2-b322-005b1863e967",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "a3be9f80-7d33-4fec-bf83-6fbb127aae36",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
