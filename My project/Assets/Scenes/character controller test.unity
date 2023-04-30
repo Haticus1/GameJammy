@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 1187151866}
   - component: {fileID: 1187151867}
   - component: {fileID: 1187151868}
+  - component: {fileID: 1187151869}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Player
@@ -356,7 +357,7 @@ Transform:
   m_GameObject: {fileID: 1187151861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 740103231}
@@ -451,6 +452,20 @@ MonoBehaviour:
   m_DefaultActionMap: PlayerControls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1187151869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187151861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7425fd709983b54f8d70e89ae1ee448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlowScale: 0.6
+  slowMeter: 10
 --- !u!1 &1604000805
 GameObject:
   m_ObjectHideFlags: 0
