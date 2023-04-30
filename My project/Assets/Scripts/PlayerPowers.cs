@@ -17,6 +17,7 @@ public class PlayerPowers : MonoBehaviour
         }
         else
         {
+            Time.timeScale = 1f;
             if (slowMeter < 10)
             {
                 slowMeter += Time.deltaTime;

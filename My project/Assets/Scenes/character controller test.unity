@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5271d48c1b209254e8b0e87fb620e689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 8
   rb: {fileID: 1187151863}
 --- !u!50 &1187151863
 Rigidbody2D:
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7425fd709983b54f8d70e89ae1ee448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlowScale: 0.6
+  SlowScale: 0.8
   slowMeter: 10
 --- !u!1 &1604000805
 GameObject:
