@@ -29,7 +29,11 @@ public class shooting : MonoBehaviour
 
     void SpawnProjectile()
     {
-        GameObject bubble = Instantiate(bubblePrefab, firePoint.position, firePoint.rotation);
+        GameObject bubble = PlayerObjectPool.instance.GetPoolObject();
+        if (bubble == null) return;
+        bubble.transform.position = firePoint.position;
+        bubble.transform.rotation = firePoint.rotation;
+        bubble.SetActive(true);
         Rigidbody2D rb = bubble.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bubbleForce, ForceMode2D.Impulse);
         timer = 0f;
