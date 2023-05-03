@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public GameState gs;
 
     public int powerLevel = 1;
     public int playerHealth = 5;
@@ -21,6 +22,39 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
+        switch (gs)
+        {
+            case GameState.Win:
+                //code to win
+                break;
+            case GameState.Play: break;
+            case GameState.Lose:
+                //Code to lose
+                //pause the game
+                //display the lose UI
+                    // score
+                    //High score
+                    //quit button
+                    //replay/restart button
+
+                break;
+        }
+
+
+
+        if(gs == GameState.Lose)
+        {
+            //code to end the game
+        }
+    }
+
+    public void EditHealth(int i)
+    {
+        playerHealth += i;
+        if(playerHealth < 1)
+        {
+            gs = GameState.Lose;
+        }
     }
 
     public enum GameState
