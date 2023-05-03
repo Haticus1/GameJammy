@@ -5,8 +5,6 @@ using UnityEngine;
 public class PlayerPowers : MonoBehaviour
 {
     [SerializeField] float SlowScale = 0.6f;
-    [SerializeField] float slowMeter = 10;
-    // Start is called before the first frame update
 
     // Update is called once per frame
     void Update()
@@ -18,19 +16,19 @@ public class PlayerPowers : MonoBehaviour
         else
         {
             Time.timeScale = 1f;
-            if (slowMeter < 10)
+            if (GameManager.instance.slowMeter < 10)
             {
-                slowMeter += Time.deltaTime;
+                GameManager.instance.slowMeter += Time.deltaTime/2;
             }
-            else if (slowMeter > 10) slowMeter = 10;          
+            else if (GameManager.instance.slowMeter > 5) GameManager.instance.slowMeter = 5;          
         }
     }
 
     void TimeSlow()
     {
-        if (slowMeter > 0)
+        if (GameManager.instance.slowMeter > 0)
         {
-            slowMeter -= Time.deltaTime; 
+            GameManager.instance.slowMeter -= Time.deltaTime; 
             Time.timeScale = SlowScale;
         }
         else Time.timeScale = 1;        
