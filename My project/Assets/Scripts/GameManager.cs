@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public int powerLevel = 1;
     public int playerHealth = 5;
     public float slowMeter = 5.0f;
+    public GameObject Drops;
+
+
     void Awake()
     {
         if (instance == null)
@@ -21,6 +24,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        
+
+
 
         switch (gs)
         {
@@ -46,6 +53,13 @@ public class GameManager : MonoBehaviour
         {
             //code to end the game
         }
+
+        
+
+
+
+
+
     }
 
     public void EditHealth(int i)
@@ -63,6 +77,9 @@ public class GameManager : MonoBehaviour
         Win,
         Lose
     }
+
+
+
 
 
 
