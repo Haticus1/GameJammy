@@ -4,15 +4,38 @@ using UnityEngine;
 
 public class Explode : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int health;
+    public GameObject Drop;
+    public GameObject Myself;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+      
     }
+
+    // Update is called once per frame
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Projectile")
+        {
+            health--;
+
+            if (health == 0)
+            {
+                Instantiate(Drop,transform.position,Quaternion.identity);
+               
+                Destroy(gameObject);
+            }
+        }
+
+
+    }
+
+
+
 }

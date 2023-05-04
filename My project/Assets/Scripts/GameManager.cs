@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public GameState gs;
 
     public int powerLevel = 1;
+    public int XP = 0;
+
     public int playerHealth = 5;
     public float slowMeter = 5.0f;
     public GameObject Drops;
@@ -78,6 +80,15 @@ public class GameManager : MonoBehaviour
         Lose
     }
 
+  public void LevelUp()
+    {
+        if(XP >= 1)
+        {
+            XP = 0;
+            powerLevel++;
+        }
+
+    }
 
 
 

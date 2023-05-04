@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2730566344547188902}
   - component: {fileID: 2730566344547188901}
   - component: {fileID: 3891303880842162051}
+  - component: {fileID: 7125618365727501853}
+  - component: {fileID: 7133037876646494866}
   m_Layer: 0
   m_Name: First enemy
   m_TagString: Untagged
@@ -117,6 +119,37 @@ MonoBehaviour:
   Bullet: {fileID: 2555896284878825292, guid: 0243bb61613f1c444a41b08d3234e9a5, type: 3}
   bulletPos: {fileID: 3331671715747567029}
   timer: 2
+--- !u!114 &7125618365727501853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2730566344547188900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456998fecda4a2646a04c6b522963bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  Drop: {fileID: 4364117011195784410, guid: 086bf5b7b7693f64794711793e9aa8fa, type: 3}
+  Myself: {fileID: 2730566344547188900}
+--- !u!58 &7133037876646494866
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2730566344547188900}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.040699124}
+  serializedVersion: 2
+  m_Radius: 0.19420254
 --- !u!1 &2730566345223153342
 GameObject:
   m_ObjectHideFlags: 0
