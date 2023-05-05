@@ -36,8 +36,7 @@ public class PlayerObjectPool : MonoBehaviour
                 return poolOfObjects[i];
             }
         }
-        return null;
-        
+        return null;    
     }
 
 }

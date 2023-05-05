@@ -6,10 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public GameState gs;
-
     public int powerLevel = 1;
-    public int XP = 0;
-
     public int playerHealth = 5;
     public float slowMeter = 5.0f;
     public GameObject Drops;
@@ -26,11 +23,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        
-
-
-
         switch (gs)
         {
             case GameState.Win:
@@ -45,23 +37,13 @@ public class GameManager : MonoBehaviour
                     //High score
                     //quit button
                     //replay/restart button
-
                 break;
         }
-
-
 
         if(gs == GameState.Lose)
         {
             //code to end the game
         }
-
-        
-
-
-
-
-
     }
 
     public void EditHealth(int i)
@@ -82,16 +64,6 @@ public class GameManager : MonoBehaviour
 
   public void LevelUp()
     {
-        if(XP >= 1)
-        {
-            XP = 0;
-            powerLevel++;
-        }
-
+            powerLevel++;       
     }
-
-
-
-
-
 }

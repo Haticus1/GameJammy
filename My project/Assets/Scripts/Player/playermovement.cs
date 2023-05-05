@@ -19,8 +19,4 @@ public class playermovement : MonoBehaviour
 
     public void OnMove(InputValue value) => movement = value.Get<Vector2>();
 
-    //if we collide with something
-    //if the object we collide with has the tag "Player"
-    //GameManager
-
 }

@@ -9,24 +9,19 @@ public class PowerUps : MonoBehaviour
     private int time1;
     private int time2;
     public GameObject me;
-    Vector3 Move;
-    void Start()
+    Vector2 Move;
+    void Awake()
     {
         Rigidbody = GetComponent<Rigidbody2D>();
-        Move = new Vector3(0, -0.01f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Translate(Move);
+        Move = new Vector2(0, -1f);
+        Rigidbody.velocity = Move;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            GameManager.instance.XP++;
+            GameManager.instance.LevelUp();
             Destroy(this.gameObject);
         }
         else
