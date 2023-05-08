@@ -16,7 +16,7 @@ public class PlayerPowers : MonoBehaviour
         else
         {
             Time.timeScale = 1f;
-            if (GameManager.instance.slowMeter <= 5)
+            if (GameManager.instance.slowMeter < 5)
             {
                 GameManager.instance.slowMeter += Time.deltaTime/2;
             }
