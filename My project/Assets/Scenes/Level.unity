@@ -1202,6 +1202,7 @@ GameObject:
   - component: {fileID: 1659516041}
   - component: {fileID: 1659516040}
   - component: {fileID: 1659516042}
+  - component: {fileID: 1659516043}
   m_Layer: 0
   m_Name: GameManagerObject
   m_TagString: Untagged
@@ -1258,6 +1259,20 @@ MonoBehaviour:
   objectToSpawn: {fileID: 1391621261660423985, guid: 0eea4bbd91de4aa499c21b8a98683222, type: 3}
   poolOfObjects: []
   poolCount: 20
+--- !u!114 &1659516043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659516039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a90e33fdcbc22b47a695501fa3a292b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves: []
+  spawnpoints: []
 --- !u!1 &1971297418
 GameObject:
   m_ObjectHideFlags: 0
