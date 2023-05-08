@@ -9,8 +9,10 @@ public class GameManager : MonoBehaviour
     public int powerLevel = 1;
     public int playerHealth = 5;
     public int score = 0;
+    public float slowMax = 5f;
     public float slowMeter = 5.0f;
     public GameObject Drops;
+
 
 
     void Awake()
