@@ -24,9 +24,12 @@ public class BulletTrack : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        gameObject.SetActive(false);
+        if (collision.gameObject.tag == "Player")
+        {
+            GameManager.instance.EditHealth(-1);
+        }
     }
 }
